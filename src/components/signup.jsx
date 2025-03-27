@@ -18,6 +18,7 @@ const Signup = () =>{
         setFormdata({...formdata, [e.target.name]:e.target.value})
     }
     const {email, first_name, last_name, password, password2}=formdata
+
     return (
         <div>
             <div className='form-container'>
@@ -60,8 +61,8 @@ const Signup = () =>{
                                 <label htmlFor="">Confirm Password :</label>
                                 <input type="password"
                                 className='email-form'
-                                name="password" 
-                                value={password} 
+                                name="password2" 
+                                value={password2} 
                                 onChange={handleOnchange}/>
                             </div>
                             <input type="submit" value="Submit" className="submitButton" />
